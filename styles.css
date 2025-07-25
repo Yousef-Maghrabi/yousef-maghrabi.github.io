@@ -7,7 +7,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-  color: #fff;
+  color: #ffffff;
   min-height: 100vh;
   padding: 2rem;
 }
@@ -25,12 +25,13 @@ body {
 .card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
-  border-radius: 15px;
+  border-radius: 16px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Profile */
+/* Profile Image */
 .profile-img {
   width: 140px;
   height: 140px;
@@ -46,14 +47,17 @@ body {
 .intro h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 .tagline {
   font-size: 1.1rem;
   opacity: 0.9;
+  margin-bottom: 1rem;
 }
 .contact-info p {
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   font-size: 0.95rem;
+  color: #ccc;
 }
 
 /* Headings */
@@ -76,12 +80,13 @@ ul {
 ul li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
+  color: #ddd;
 }
 
-/* Grid Layout for Education & Skills */
+/* Grid Layout */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
