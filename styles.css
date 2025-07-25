@@ -31,16 +31,19 @@ body {
   flex-direction: column; 
 }
 .intro-text h1 {
+  text-align: center;
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
 }
 .intro-text h2.typing {
+  text-align: center;
   font-size: 1.5rem;
   height: 2rem;
   margin-bottom: 1rem;
   color: #69c0ff;
 }
 .intro-text p {
+  text-align: center;
   font-size: 1rem;
   color: #ccc;
 }
