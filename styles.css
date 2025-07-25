@@ -1,4 +1,4 @@
-/* Base Reset */
+/* Base Setup */
 * {
   margin: 0;
   padding: 0;
@@ -6,97 +6,94 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #fff;
+  scroll-behavior: smooth;
   min-height: 100vh;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
-/* Container Layout */
+/* Background Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header Section */
+.main-header {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+}
+.intro-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+.intro-text h2.typing {
+  font-size: 1.5rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  color: #69c0ff;
+}
+.intro-text p {
+  font-size: 1rem;
+  color: #ccc;
+}
+.highlight {
+  color: #69c0ff;
+}
+
+/* Layout */
 .container {
   max-width: 900px;
   margin: auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* Card Layout */
+/* Card Styling */
 .card {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Profile Image */
-.profile-img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin-bottom: 1rem;
-}
-.intro {
-  text-align: center;
-}
-.intro h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-.tagline {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  margin-bottom: 1rem;
-}
-.contact-info p {
-  margin-top: 0.3rem;
-  font-size: 0.95rem;
-  color: #ccc;
-}
-
-/* Headings */
+/* Typography */
 h2 {
-  font-size: 1.8rem;
   color: #69c0ff;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 h3 {
+  margin-top: 1.2rem;
   font-size: 1.2rem;
-  margin-top: 1.5rem;
   color: #ccc;
 }
-
-/* List Styling */
 ul {
-  margin-top: 0.5rem;
   padding-left: 1.5rem;
 }
-ul li {
+li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
-  color: #ddd;
-}
-
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  color: #eee;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 2rem;
   font-size: 0.85rem;
   color: #aaa;
+  margin-top: 3rem;
 }
+
+/* Links */
 a {
   color: #69c0ff;
   text-decoration: none;
