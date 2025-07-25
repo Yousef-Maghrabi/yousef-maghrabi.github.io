@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yousef Maghrabi | Developer Portfolio</title>
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" type="image/png">
+  <meta name="description" content="Yousef Maghrabi - Freelance Web and Mobile Developer specializing in React, Flutter, and UI/UX design. View projects, skills, and contact information.">
+  <meta name="keywords" content="Yousef Maghrabi, Web Developer, Mobile Developer, React Developer, Flutter, Frontend, UI UX, Portfolio, Programmer Egypt, Content Creator">
+  <meta name="author" content="Yousef Maghrabi">
+  <meta property="og:title" content="Yousef Maghrabi | Web & Mobile Developer Portfolio">
+  <meta property="og:description" content="Portfolio website of Yousef Maghrabi showcasing web & mobile development, design skills, and content creation.">
+  <meta property="og:image" content="your-image-url.jpg">
+  <meta property="og:type" content="website">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header" data-aos="fade-down">
     <div class="intro-text">
       <h1>Hello, I'm <span class="highlight">Yousef Maghrabi</span></h1>
       <h2 class="typing"></h2>
@@ -18,7 +26,7 @@
   </header>
 
   <main class="container">
-    <section class="card">
+    <section class="card" data-aos="fade-up">
       <h2>Experience</h2>
       <h3>Egypt Wonders Tours — Web/Mobile Developer</h3>
       <ul>
@@ -33,7 +41,7 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="card" data-aos="fade-right">
       <h2>Education</h2>
       <ul>
         <li>React & Next.js</li>
@@ -43,7 +51,7 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="card" data-aos="fade-left">
       <h2>Skills</h2>
       <ul>
         <li>React, HTML, CSS, JS</li>
@@ -53,17 +61,24 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="card" data-aos="zoom-in">
       <h2>Languages</h2>
       <p>Arabic — Native</p>
       <p>English — Fluent</p>
     </section>
 
-    <footer>
+    <footer data-aos="fade-up">
       <p>&copy; 2025 Yousef Maghrabi. All rights reserved.</p>
     </footer>
   </main>
-</body>
-  <script src="script.js?v=2"></script>
 
+  <script src="script.js?v=2"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
 </html>
